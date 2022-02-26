@@ -4,30 +4,7 @@ import 'package:flutter/foundation.dart';
 
 class QuizModel {
   List<Quiz> get() {
-    return [
-      Quiz(
-        question:
-            "Which king was killed at the Battle of Bosworth Field in 1485? ",
-        correctAnswer: 'Richard III',
-        incorrectAnswers: ["Edward V", "Henry VII", "James I"],
-      ),
-      Quiz(
-        question:
-            "All of the following countries have official claims to territory in Antartica EXCEPT: ",
-        correctAnswer: 'United States',
-        incorrectAnswers: ["Australia", "Chile", "Norway"],
-      ),
-      Quiz(
-        question:
-            "When did Canada leave the confederation to become their own nation?",
-        correctAnswer: 'July 1st, 1867',
-        incorrectAnswers: [
-          "July 1st, 1763",
-          "July 1st, 1832",
-          "July 1st, 1902"
-        ],
-      ),
-    ];
+    return [];
   }
 }
 

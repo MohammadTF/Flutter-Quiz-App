@@ -6,16 +6,14 @@ class Result extends StatelessWidget {
   Result(this._totalScore);
   String get lastMsg {
     if (_totalScore > 10) {
-      return 'You are awesome ${_totalScore}';
+      return 'You are awesome $_totalScore';
     } else {
-      return 'Better luck next time. ${_totalScore}';
+      return 'Better luck next time. $_totalScore';
     }
   }
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text(lastMsg),
-    );
+    return Text(lastMsg);
   }
 }

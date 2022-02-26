@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:udemy_assignment_1/pages/Result.dart';
-import 'package:udemy_assignment_1/widgets/Answers.dart';
-import '../widgets/Question.dart';
+import 'package:udemy_assignment_1/pages/result.dart';
+import 'package:udemy_assignment_1/widgets/answers.dart';
+import 'question.dart';
 import '../models/quiz.dart';
 import 'dart:convert' as convert;
 import 'package:http/http.dart' as http;
@@ -36,7 +36,6 @@ class _QuizBoxState extends State<QuizBox> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     loadData();
   }
@@ -52,12 +51,7 @@ class _QuizBoxState extends State<QuizBox> {
       _questions = List.from(jsonDecoded)
           .map<Quiz>((quiz) => Quiz.fromMap(quiz))
           .toList();
-
-      print(jsonDecoded);
-      // print('Number of books about http: $itemCount.');
-    } else {
-      // print('Request failed with status: ${response.statusCode}.');
-    }
+    } else {}
   }
 
   @override
